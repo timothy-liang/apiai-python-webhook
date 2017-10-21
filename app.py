@@ -58,7 +58,7 @@ def makeYqlQuery(req):
     #     return None
     #
     # return "select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='" + city + "')"
-    return sqrt(2 * d / a)
+    return sqrt(d/v)
 
 
 def makeWebhookResult(data):
