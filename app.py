@@ -51,9 +51,9 @@ def processRequest(req):
 def makeYqlQuery(req):
     result = req.get("result")
     parameters = result.get("parameters")
-    d = parameters.get("unit-length")
-    v = parameters.get("unit-speed")
-    a = parameters.get("unit-accel")
+    d = parameters.get("unit-length").get("amount")
+    v = parameters.get("unit-speed").get("amount")
+    #a = parameters.get("unit-accel")
     # if city is None:
     #     return None
     #
