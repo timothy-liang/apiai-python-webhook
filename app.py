@@ -58,7 +58,7 @@ def makeYqlQuery(req):
     #     return None
     #
     # return "select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='" + city + "')"
-    return sqrt(d/v)
+    return d/v
 
 
 def makeWebhookResult(data):
@@ -86,7 +86,7 @@ def makeWebhookResult(data):
     #
     # # print(json.dumps(item, indent=4))
 
-    speech = data
+    speech = "Time: " + data
 
     print("Response:")
     print(speech)
